@@ -20,5 +20,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, Zeichenketten::class.java )
             startActivity(intent)
         }
+        val buttonZeitangaben:Button = findViewById(R.id.buttonZeitangaben)
+        buttonZeitangaben.setOnClickListener {
+            val intent = Intent(this@MainActivity, Zeitangaben::class.java )
+            startActivity(intent)
+        }
     }
 }
