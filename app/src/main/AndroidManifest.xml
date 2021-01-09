@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication2">
-        <activity android:name=".CalendarView"></activity>
+        <activity android:name=".TimePickerView"></activity>
+        <activity android:name=".DatePickerView" />
+        <activity android:name=".CalendarView" />
         <activity android:name=".Zeitangaben" />
         <activity android:name=".Zeichenketten" />
         <activity android:name=".math" />

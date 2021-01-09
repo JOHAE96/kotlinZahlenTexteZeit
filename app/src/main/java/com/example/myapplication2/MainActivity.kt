@@ -30,5 +30,15 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, CalendarView::class.java )
             startActivity(intent)
         }
+        val buttonDatePicker:Button = findViewById(R.id.buttonDatePicker)
+        buttonDatePicker.setOnClickListener {
+            val intent = Intent(this@MainActivity, DatePickerView::class.java )
+            startActivity(intent)
+        }
+        val buttonTimePicker:Button = findViewById(R.id.buttonTimePicker)
+        buttonTimePicker.setOnClickListener {
+            val intent = Intent(this@MainActivity, TimePickerView::class.java )
+            startActivity(intent)
+        }
     }
 }
