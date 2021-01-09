@@ -25,5 +25,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, Zeitangaben::class.java )
             startActivity(intent)
         }
+        val buttonCalendarView:Button = findViewById(R.id.buttonCalendarView)
+        buttonCalendarView.setOnClickListener {
+            val intent = Intent(this@MainActivity, CalendarView::class.java )
+            startActivity(intent)
+        }
     }
 }
