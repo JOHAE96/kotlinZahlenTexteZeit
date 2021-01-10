@@ -45,5 +45,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, zeitlicheSteuerung::class.java )
             startActivity(intent)
         }
+        val buttonMulti:Button = findViewById(R.id.buttonMulti)
+        buttonMulti.setOnClickListener {
+            val intent = Intent(this@MainActivity, mehrereSteuerungen::class.java )
+            startActivity(intent)
+        }
     }
 }
