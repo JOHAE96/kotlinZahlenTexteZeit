@@ -51,6 +51,7 @@ class Zeitangaben : AppCompatActivity() {
             )
             var ausgabe = sdf.format(kal.time) + " set(), alle\n"
             kal.set(Calendar.MONTH, 0)
+            kal.set(Calendar.HOUR_OF_DAY, 14)
             kal.set(Calendar.SECOND, -70)
             ausgabe += sdf.format(kal.time) + " set(), einzeln\n"
             kal.add(Calendar.MINUTE, -70)
