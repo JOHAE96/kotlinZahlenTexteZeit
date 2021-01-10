@@ -40,5 +40,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, TimePickerView::class.java )
             startActivity(intent)
         }
+        val buttonZeitlicheSteuerung:Button = findViewById(R.id.buttonZeitlicheSteuerung)
+        buttonZeitlicheSteuerung.setOnClickListener {
+            val intent = Intent(this@MainActivity, zeitlicheSteuerung::class.java )
+            startActivity(intent)
+        }
     }
 }
