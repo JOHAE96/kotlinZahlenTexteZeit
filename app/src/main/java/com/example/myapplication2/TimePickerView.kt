@@ -13,6 +13,7 @@ class TimePickerView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_time_picker_view)
+        title = "timepicker"
         val textView: TextView = findViewById(R.id.textView6)
         val tpUhrzeit: TimePicker = findViewById(R.id.tpUhrzeit)
         var sdf = SimpleDateFormat(

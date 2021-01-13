@@ -32,7 +32,6 @@ class Zeitangaben : AppCompatActivity() {
         buttonGetTime.setOnClickListener {
             kal = Calendar.getInstance()
             datum = kal.time
-
             var sdf = SimpleDateFormat(
                 "dd.MM.yyyy HH:mm:ss,SSS", lokal
             )
@@ -67,8 +66,7 @@ class Zeitangaben : AppCompatActivity() {
             while (z < 1.5e8)
                 z++
             val kalEnde = Calendar.getInstance()
-            val diffSekunden = (kalEnde.timeInMillis -
-                kalBeginn.timeInMillis) / 1000.0
+            val diffSekunden = (kalEnde.timeInMillis - kalBeginn.timeInMillis) / 1000.0
             textView.text = "Differenz in Sekunden: %.3f"
                 .format(diffSekunden)
         }
@@ -96,8 +94,6 @@ class Zeitangaben : AppCompatActivity() {
                     ausgabe += "nicht gültig" }
                 textView.text = ausgabe }
         }
-
-
 
     val buttonEingabeTime: Button = findViewById(R.id.buttonEingabeTime)
     buttonEingabeTime.setOnClickListener {

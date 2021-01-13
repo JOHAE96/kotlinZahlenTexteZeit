@@ -10,6 +10,7 @@ class mehrereSteuerungen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mehrere_steuerungen)
+        title = "mehrere steuerungen"
         val textView: TextView = findViewById(R.id.textView8)
         val button1: Button = findViewById(R.id.button1)
         val button2: Button = findViewById(R.id.button2)

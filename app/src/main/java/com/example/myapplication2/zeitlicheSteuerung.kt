@@ -16,7 +16,7 @@ class zeitlicheSteuerung : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zeitliche_steuerung)
-
+        title = "zeitliche Steuerung"
         val textView: TextView = findViewById(R.id.textAusgabe)
 
         //private val pbAusgabe: ProgressBar = findViewById(R.id.pbAusgabe)

@@ -58,7 +58,8 @@ class Zeichenketten : AppCompatActivity() {
         if("Hallo".compareTo("Halli") > 0)
             ausgabe += "Reihenfolge, Hallo nach Halli\n"
         else if("Hallo".compareTo("Halli") < 0)
-            ausgabe += "Reihenfolge, Hallo vor Halli\n" else
+            ausgabe += "Reihenfolge, Hallo vor Halli\n"
+        else
             ausgabe += "Gleich\n"
         if("Hallo".compareTo("hallo", true) == 0)
             ausgabe += "Gleich, ohne Prüfung groß/klein\n\n"

@@ -15,6 +15,7 @@ class DatePickerView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_date_picker_view)
+        title = "Datepicker"
         val textView: TextView = findViewById(R.id.textView5)
         val dpDatum : DatePicker = findViewById(R.id.dpDatum)
         if (Build.VERSION.SDK_INT >= 26) {
